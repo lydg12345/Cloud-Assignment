@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th><th>Type 1</th><th>Type 2</th><th>Attack</th><th>Defense</th><th>HP</th><th>SP Attack</th><th>SP Defense</th><th>Speed</th><th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>{{pokemon.name}}</td>
+                        <td>{{pokemon.type_1}}</td>
+                        <td>{{pokemon.type_2}}</td>
+                        <td>{{pokemon.attack}}</td>
+                        <td>{{pokemon.defense}}</td>
+                        <td>{{pokemon.hp}}</td>
+                        <td>{{pokemon.special_attack}}</td>
+                        <td>{{pokemon.special_defense}}</td>
+                        <td>{{pokemon.speed}}</td>
+                        <td>{{pokemon.total}}</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

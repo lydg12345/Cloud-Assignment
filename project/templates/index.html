@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="well well-lg">
+        <h1>
+            {{names.name}}
+        </h1>
+        <p>
+            {{names.description}}
+        </p>
+
+    </div>
+    
+    {% for a in aws %}
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="{{a.name}}">{{a.name}}</a>
+    </nav>
+    {% endfor %}
+
+{% endblock %}
