@@ -1,7 +1,7 @@
 version: '2'
 services:
   app:
-    image: devteds/rails-api-example
+    image: finalproject
     ports:
       - "80:3000"
     environment:
